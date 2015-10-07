@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="EECustomTableViewCell" rowHeight="60" id="jON-66-ifM" customClass="EECustomTableViewCell">
+            <rect key="frame" x="0.0" y="-1" width="400" height="60"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jON-66-ifM" id="LqZ-RY-HQ3">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultImage" translatesAutoresizingMaskIntoConstraints="NO" id="xIX-kX-GSy">
+                        <rect key="frame" x="0.0" y="0.0" width="59" height="59"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="xIX-kX-GSy" secondAttribute="height" multiplier="1:1" id="mGP-YY-niT"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nameAndLastName" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gt1-2I-WqQ">
+                        <rect key="frame" x="67" y="8" width="325" height="29"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="dateOfCreating" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AMo-Qu-nvD">
+                        <rect key="frame" x="67" y="35" width="325" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="325" id="7nw-19-5as"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                        <color key="textColor" red="0.066666666669999999" green="0.1764705882" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="xIX-kX-GSy" secondAttribute="bottom" constant="-8" id="JgN-u1-dI1"/>
+                    <constraint firstItem="gt1-2I-WqQ" firstAttribute="leading" secondItem="xIX-kX-GSy" secondAttribute="trailing" constant="8" symbolic="YES" id="LCI-4V-MeR"/>
+                    <constraint firstItem="xIX-kX-GSy" firstAttribute="top" secondItem="gt1-2I-WqQ" secondAttribute="bottom" constant="-37" id="Lcr-zN-LPh"/>
+                    <constraint firstItem="gt1-2I-WqQ" firstAttribute="trailing" secondItem="LqZ-RY-HQ3" secondAttribute="trailingMargin" id="OKP-QB-YuQ"/>
+                    <constraint firstItem="AMo-Qu-nvD" firstAttribute="top" secondItem="LqZ-RY-HQ3" secondAttribute="topMargin" constant="27" id="SH4-uW-6Na"/>
+                    <constraint firstItem="AMo-Qu-nvD" firstAttribute="trailing" secondItem="gt1-2I-WqQ" secondAttribute="trailing" id="bWM-11-Abe"/>
+                    <constraint firstItem="AMo-Qu-nvD" firstAttribute="bottom" secondItem="LqZ-RY-HQ3" secondAttribute="bottomMargin" id="cI6-0e-4ii"/>
+                    <constraint firstItem="AMo-Qu-nvD" firstAttribute="leading" secondItem="gt1-2I-WqQ" secondAttribute="leading" id="cqs-Fz-Z8U"/>
+                    <constraint firstItem="xIX-kX-GSy" firstAttribute="leading" secondItem="LqZ-RY-HQ3" secondAttribute="leadingMargin" constant="-8" id="f4r-pN-V6u"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="AMo-Qu-nvD" secondAttribute="trailing" constant="-7" id="vaV-Af-Lve"/>
+                    <constraint firstItem="xIX-kX-GSy" firstAttribute="top" secondItem="LqZ-RY-HQ3" secondAttribute="topMargin" constant="-8" id="wJ4-Bs-n09"/>
+                    <constraint firstItem="gt1-2I-WqQ" firstAttribute="top" secondItem="LqZ-RY-HQ3" secondAttribute="topMargin" id="ysu-Pr-xag"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="OKP-QB-YuQ"/>
+                        <exclude reference="vaV-Af-Lve"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="dateOfCreationLable" destination="AMo-Qu-nvD" id="TLS-C0-edx"/>
+                <outlet property="nameAndLastNameLable" destination="gt1-2I-WqQ" id="Gr8-xY-pbA"/>
+                <outlet property="userImageView" destination="xIX-kX-GSy" id="CAT-No-ZFb"/>
+            </connections>
+            <point key="canvasLocation" x="340" y="258"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="defaultImage" width="562" height="340"/>
+    </resources>
+</document>

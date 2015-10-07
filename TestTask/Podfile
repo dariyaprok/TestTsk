@@ -1,0 +1,2 @@
+pod 'MagicalRecord'
+pod 'TPKeyboardAvoiding', '1.2.9'
