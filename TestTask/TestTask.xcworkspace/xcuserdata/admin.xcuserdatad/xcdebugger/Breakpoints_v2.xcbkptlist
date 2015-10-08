@@ -154,11 +154,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TestTask/untitled folder/EETableViewController.m"
-            timestampString = "465947330.439433"
+            timestampString = "465990609.464744"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "165"
-            endingLineNumber = "165"
+            startingLineNumber = "167"
+            endingLineNumber = "167"
             landmarkName = "-editPressed:"
             landmarkType = "5">
          </BreakpointContent>

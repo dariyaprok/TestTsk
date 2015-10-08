@@ -55,8 +55,10 @@ static const NSString *EEPushPersonViewingViewControollerSegue = @"EEPushPersonV
 }
 
 -(void) cancelPersonInformationViewController: (EEPersonInformationViewController*)viewController {
-    if (!self.isEditing)
+    if (!self.isEditing) {
         [viewController.currentPerson MR_deleteEntity];
+        [[NSManagedObjectContext MR_defaultContext] MR_saveToPersistentStoreAndWait];
+    }
 }
 
 #pragma mark - Lifecycle methods
